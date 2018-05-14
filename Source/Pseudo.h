@@ -6,6 +6,7 @@ using namespace std;
 //Crear el programa
 #define PROGRAMA int main() {
 #define FIN_DEL_PROGRAMA return 0; }
+#define FORZAR_TERMINACION_DEL_PROGRAMA exit(-1);
 
 //Crear variables
 #define CREAR_ARREGLO(tipo, nombre) vector<tipo> nombre;
@@ -50,6 +51,8 @@ using namespace std;
 
 //Constantes
 #define NULO nullptr
+#define VERDADERO true
+#define FALSO false
 
 //Operadores logicos
 #define Y &&
@@ -68,13 +71,15 @@ using namespace std;
 #define EN(y) y
 #define MIENTRAS while(
 #define HAZ ){
-#define FIN_DE_ITERACION }
+#define FIN_DE_LA_ITERACION }
+#define TERMINAR_LA_ITERERACION break;
 
 //Comparaciones
 #define SI if(
 #define SI_NO else if(
 #define ENTONCES ){
-#define FIN_DE_COMPROBACION }
+#define FIN_DE_LA_COMPROBACION }
+#define TERMINAR_LA_COMPROBACION FIN_DE_LA_COMPROBACION
 
 //Operaciones con variables
 #define ES = 
@@ -94,8 +99,8 @@ using namespace std;
 #define IMPRIMIR cout << 
 #define RECOGER_ENTRADA(dondeSeVaAGuardar) cin >> dondeSeVaAGuardar;
 #define IMPRIMIR_ARREGLO(arreglo) PARA CADA(i) EN(arreglo) HAZ IMPRIMIR i FIN_DE_LINEA FIN
-#define FIN_DE_LINEA << endl;
-#define TERMINAR_LINEA FIN_DE_LINEA
+#define FIN_DE_LA_LINEA << endl;
+#define TERMINAR_LINEA FIN_DE_LA_LINEA
 
 //Funciones
 #define FUNCION(regreso, nombre, recibe) regreso nombre recibe {
@@ -106,11 +111,11 @@ using namespace std;
 #define RECIBE(...) (__VA_ARGS__)
 #define REGRESAR_VALOR(x) return x;
 #define LLAMAR_FUNCION(nombre, ...) nombre(__VA_ARGS__);
-#define FIN_DE_FUNCION }
+#define FIN_DE_LA_FUNCION }
 
 //Estructuras
 #define ESTRUCTURA(nombre) typedef struct nombre{
-#define FIN_DE_ESTRUCTURA(nombre) }nombre;
+#define FIN_DE_LA_ESTRUCTURA(nombre) }nombre;
 #define LLENAR_ESTRUCTURA(variable, ...) variable = { __VA_ARGS__ };
 
 //Clases
@@ -130,10 +135,10 @@ using namespace std;
 #define ACCESO_PUBLICO public:
 #define ACCESO_PRIVADO private:
 #define ACCESO_PROTEGIDO protected:
-#define FIN_DE_CLASE };
+#define FIN_DE_LA_CLASE };
 
 //Pausar el programa
-#define PAUSAR_PROGRAMA  cin.ignore( numeric_limits<streamsize>::max(), '\n' ) ;
+#define PAUSAR_EL_PROGRAMA  cin.ignore( numeric_limits<streamsize>::max(), '\n' ) ;
 
 //Generación de numeros aleatorios
 #define NUMERO_ALEATORIO_EN_RANGO(min, max) ((rand() % (max - min)) + min)
@@ -141,8 +146,9 @@ using namespace std;
 
 //Enumeraciones
 #define ENUMERACION(nombre) typedef enum nombre {
-#define FIN_DE_ENUMERACION(nombre) }nombre;
+#define FIN_DE_LA_ENUMERACION(nombre) }nombre;
 
 //Expresiones vacias
 #define LUEGO 
 #define LUGARES 
+#define DESPUES
