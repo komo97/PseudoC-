@@ -68,7 +68,7 @@ using namespace std;
 //Iteraciones
 #define PARA for(
 #define CADA(x) auto &x :
-#define EN(y) y
+#define EN 
 #define MIENTRAS while(
 #define HAZ ){
 #define FIN_DE_LA_ITERACION }
@@ -94,6 +94,7 @@ using namespace std;
 #define DATOS_DE_APUNTADOR(variable) *variable
 #define ACCESO_A_MIEMBROS_DE_APUNTADOR ->
 #define ACCESO_A_MIEMBROS_DE_DATOS .
+#define CON_EL_VALOR_DE(val) val
 
 //Entrada y salida de datos
 #define IMPRIMIR cout << 
@@ -104,14 +105,17 @@ using namespace std;
 
 //Funciones
 #define FUNCION(regreso, nombre, recibe) regreso nombre recibe {
-#define DECLARAR_FUNCION(regreso, nombre, recibe) regreso nombre recibe;
-#define FUNCION_DE_CLASE(regreso, nombre, recibe, clase) regreso clase::nombre recibe {
-#define REGRESA_UN(tipoDeVariable) tipoDeVariable
+#define DECLARAR_FUNCION(nombre, regreso, recibe) regreso nombre recibe;
+#define FUNCION_DE_CLASE(nombre, regreso, recibe, clase) regreso clase::nombre recibe {
+#define QUE_REGRESA_UN(tipoDeVariable) tipoDeVariable
 #define NOMBRE_DE_FUNCION(nombre) nombre
+#define Y_RECIBE(...) (__VA_ARGS__)
 #define RECIBE(...) (__VA_ARGS__)
 #define REGRESAR_VALOR(x) return x;
 #define LLAMAR_FUNCION(nombre, ...) nombre(__VA_ARGS__);
 #define FIN_DE_LA_FUNCION }
+#define LLAMADO(nombre) nombre
+#define LLAMADA(nombre) nombre
 
 //Estructuras
 #define ESTRUCTURA(nombre) typedef struct nombre{
@@ -136,6 +140,7 @@ using namespace std;
 #define ACCESO_PRIVADO private:
 #define ACCESO_PROTEGIDO protected:
 #define FIN_DE_LA_CLASE };
+#define Y_LE_PERTENECE_A_LA_CLASE(nombre) nombre
 
 //Pausar el programa
 #define PAUSAR_EL_PROGRAMA  cin.ignore( numeric_limits<streamsize>::max(), '\n' ) ;
@@ -152,3 +157,12 @@ using namespace std;
 #define LUEGO 
 #define LUGARES 
 #define DESPUES
+#define UN
+#define CON_TIPO
+#define QUE
+#define LA
+#define EL
+#define DE
+#define COMO_UN
+
+#define ADEMAS_DE ,
