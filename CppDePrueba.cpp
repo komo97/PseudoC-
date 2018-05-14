@@ -1,58 +1,60 @@
 #include "Source\Pseudo.h"
 
-CLASE( LLAMADA(Testerino))
-ACCESO_PUBLICO
-	CREAR_VARIABLE(CON_TIPO DE ENTERO, LLAMADA(test))
-	CREAR_VARIABLE(CON_TIPO DE DECIMAL, LLAMADA(test2))
-	DECLARAR_FUNCION(LLAMADA(test3), QUE_REGRESA_UN(ENTERO), Y_RECIBE(UN ENTERO POR_REFERENCIA LLAMADO(test) ADEMAS_DE UN ENTERO LLAMADO(test2)))
-FIN_DE_LA_CLASE
+Clase(llamada(Testerino))
+Acceso_publico
+	Crear_variable(con_tipo de entero, llamada(test))
+	Crear_variable(con_tipo de decimal, llamada(test2))
+	Declarar_funcion(llamada(test3), que_regresa_un(entero), y_recibe(un entero por_referencia llamado(test) ademas_de un entero llamado(test2)))
+Fin_de_la_clase
 
-FUNCION_DE_CLASE(LLAMADA(test3), QUE_REGRESA_UN(ENTERO), Y_RECIBE(UN ENTERO POR_REFERENCIA LLAMADO(test)
-	ADEMAS_DE UN ENTERO LLAMADO(test2)), Y_LE_PERTENECE_A_LA_CLASE(Testerino))
-	ASIGNAR_A(test, test2 MAS test)
-	REGRESAR_VALOR(test)
-FIN_DE_LA_FUNCION
+Funcion_de_clase(llamada(test3), que_regresa_un(entero), y_recibe(un entero por_referencia llamado(test)
+	ademas_de un entero llamado(test2)), y_le_pertenece_a_la_clase(Testerino))
+	Asignar_a(test, test2 MAS test)
+	Regresar_valor(test)
+Fin_de_la_funcion
 
-ESTRUCTURA( LLAMADA(Testerono))
-	CREAR_VARIABLE(CON_TIPO DE ENTERO, LLAMADA(test))
-	CREAR_VARIABLE(CON_TIPO DE DECIMAL, LLAMADA(test2))
-FIN_DE_LA_ESTRUCTURA( LLAMADA(Testerono))
+Estructura( llamada(Testerono))
+	Crear_variable(con_tipo de entero, llamada(test))
+	Crear_variable(con_tipo de DECIMAL, llamada(test2))
+FIN_DE_LA_ESTRUCTURA( llamada(Testerono))
 
-CLASE( LLAMADA(Testeman), QUE HEREDA_DE LA CLASE_PUBLICA(Testerino))
-ACCESO_PUBLICO
-	CREAR_VARIABLE(CON_TIPO DE Testerono, LLAMADA(test1))
-	CREAR_VARIABLE(CON_TIPO DE APUNTADOR_DE(ENTERO), LLAMADA(testApuntador))
-	DECLARAR_CONSTRUCTOR(LLAMADO(Testeman))
-	DECLARAR_DESTRUCTOR(LLAMADO(Testeman))
-FIN_DE_LA_CLASE
+Clase( llamada(Testeman), que hereda_de la clase_publica(Testerino))
+Acceso_publico
+	Crear_variable(con_tipo de Testerono, llamada(test1))
+	Crear_variable(con_tipo de apuntador_de(entero), llamada(testApuntador))
+	Declarar_constructor(llamado(Testeman))
+	Declarar_destructor(llamado(Testeman))
+Fin_de_la_clase
 
-IMPLEMENTAR_CONSTRUCTOR(LLAMADO(Testeman))
-	LLENAR_ESTRUCTURA(LLAMADA(test1), 1, 22.2f)
-	ALOCAR_MEMORIA(EN testApuntador, COMO_UN ENTERO, CON_EL_VALOR_DE(22))
-	DESTRUIR_VARIABLE(LLAMADA(testApuntador))
-FIN_DEL_CONSTRUCTOR
+Implementar_constructor(llamado(Testeman))
+	Llenar_estructura(llamada(test1), 1, 22.2f)
+	Alocar_memoria(en testApuntador, como_un entero, con_el_valor_de(22))
+	Destruir_variable(llamada(testApuntador))
+Fin_del_constructor
 
-IMPLEMENTAR_DESTRUCTOR(LLAMADO(Testeman))
+Implementar_destructor(llamado(Testeman))
 
-FIN_DEL_DESTRUCTOR
+Fin_del_destructor
 
-PROGRAMA
-	SI 2 ES_IGUAL_A 22 O 3 ES_MENOR_QUE 5 ENTONCES
-		IMPRIMIR 22 LUEGO TERMINAR_LA_LINEA
-	DESPUES TERMINAR_LA_COMPROBACION
-	LUEGO
-	CREAR_COLECCION(CON_TIPO DE ENTERO, LLAMADA(laColeccion))
-	CREAR_VARIABLE(CON_TIPO DE ENTERO, LLAMADA(iterador))
-	MIENTRAS iterador SEA_MENOR_QUE 50 HAZ
-		AGREGAR_A_LA_COLECCION(laColeccion, UN NUMERO_ALEATORIO_EN_RANGO(0,1000))
-	FIN_DE_LA_ITERACION
-	CREAR_VARIABLE(CON_TIPO DE ENTERO, LLAMADA(elMaximo))
-	ASIGNAR_A(elMaximo, EL_VALOR_DE(0))
-	PARA CADA(numero) EN laColeccion HAZ
-		SI EL numero ES_MAYOR_QUE elMaximo ENTONCES
-			ASIGNAR_A(elMaximo, EL_VALOR_DE(EL numero))
-		DESPUES TERMINAR_LA_COMPROBACION
-	FIN_DE_LA_ITERACION
-	IMPRIMIR elMaximo LUEGO TERMINAR_LA_LINEA
-	DESPUES PAUSAR_EL_PROGRAMA
-FIN_DEL_PROGRAMA
+Programa
+	Si 2 es_igual_a 22 o 3 es_menor_que 5 entonces
+		imprimir 22 luego terminar_la_linea
+	Despues terminar_la_comprobacion
+	Luego
+	Crear_coleccion(con_tipo de entero, llamada(laColeccion))
+	Crear_variable(con_tipo de entero, llamada(iterador))
+	Asignar_a(iterador, el_valor_de(0))
+	Mientras iterador sea_menor_que 50 haz
+		Agregar_a_la_coleccion(laColeccion, un numero_aleatorio_en_rango(0,1000))
+		Incrementar(iterador)
+	Fin_de_la_iteracion
+	Crear_variable(con_tipo de entero, llamada(elMaximo))
+	Asignar_a(elMaximo, el_valor_de(0))
+	Para cada(numero) en laColeccion haz
+		Si el numero es_mayor_que elMaximo entonces
+			Asignar_a(elMaximo, el_valor_de(el numero))
+		Despues terminar_la_comprobacion
+	Fin_de_la_iteracion
+	Imprimir elMaximo luego Terminar_la_linea
+	Despues pausar_el_programa
+Fin_del_programa
