@@ -31,15 +31,21 @@ using namespace std;
 //Comparaciones entre variables
 #define ES_IGUAL_A ==
 #define SEA_IGUAL_QUE ES_IGUAL_A
+#define ES_IGUAL_QUE ES_IGUAL_A
 #define NO_ES_IGUAL_A !=
+#define NO_ES_IGUAL_QUE NO_ES_IGUAL_A
 #define NO_SEA_IGUAL_QUE NO_ES_IGUAL_A
 #define ES_MENOR_O_IGUAL_A <=
+#define ES_MENOR_O_IGUAL_QUE ES_MENOR_O_IGUAL_A
 #define SEA_MENOR_O_IGUAL_QUE ES_MENOR_O_IGUAL_A
 #define ES_MAYOR_O_IGUAL_A >=
+#define ES_MAYOR_O_IGUAL_QUE ES_MAYOR_O_IGUAL_A
 #define SEA_MAYOR_O_IGUAL_QUE ES_MAYOR_O_IGUAL_A
 #define ES_MENOR_A <
+#define ES_MENOR_QUE ES_MENOR_A
 #define SEA_MENOR_QUE ES_MENOR_A
 #define ES_MAYOR_A >
+#define ES_MAYOR_QUE ES_MAYOR_A
 #define SEA_MAYOR_QUE ES_MAYOR_A
 
 //Constantes
@@ -55,7 +61,6 @@ using namespace std;
 #define O_BINARIO |
 #define MOVER_A_LA_IZQUIERDA << 
 #define MOVER_A_LA_DERECHA >> 
-#define LUGARES 
 
 //Iteraciones
 #define PARA for(
@@ -90,6 +95,7 @@ using namespace std;
 #define RECOGER_ENTRADA(dondeSeVaAGuardar) cin >> dondeSeVaAGuardar;
 #define IMPRIMIR_ARREGLO(arreglo) PARA CADA(i) EN(arreglo) HAZ IMPRIMIR i FIN_DE_LINEA FIN
 #define FIN_DE_LINEA << endl;
+#define TERMINAR_LINEA FIN_DE_LINEA
 
 //Funciones
 #define FUNCION(regreso, nombre, recibe) regreso nombre recibe {
@@ -136,3 +142,7 @@ using namespace std;
 //Enumeraciones
 #define ENUMERACION(nombre) typedef enum nombre {
 #define FIN_DE_ENUMERACION(nombre) }nombre;
+
+//Expresiones vacias
+#define LUEGO 
+#define LUGARES 
