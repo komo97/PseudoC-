@@ -68,7 +68,6 @@ using namespace std;
 //Iteraciones
 #define PARA for(
 #define CADA(x) auto &x :
-#define EN 
 #define MIENTRAS while(
 #define HAZ ){
 #define FIN_DE_LA_ITERACION }
@@ -95,13 +94,14 @@ using namespace std;
 #define ACCESO_A_MIEMBROS_DE_APUNTADOR ->
 #define ACCESO_A_MIEMBROS_DE_DATOS .
 #define CON_EL_VALOR_DE(val) val
+#define EL_VALOR_DE(val) val
 
 //Entrada y salida de datos
 #define IMPRIMIR cout << 
 #define RECOGER_ENTRADA(dondeSeVaAGuardar) cin >> dondeSeVaAGuardar;
 #define IMPRIMIR_ARREGLO(arreglo) PARA CADA(i) EN(arreglo) HAZ IMPRIMIR i FIN_DE_LINEA FIN
 #define FIN_DE_LA_LINEA << endl;
-#define TERMINAR_LINEA FIN_DE_LA_LINEA
+#define TERMINAR_LA_LINEA FIN_DE_LA_LINEA
 
 //Funciones
 #define FUNCION(regreso, nombre, recibe) regreso nombre recibe {
@@ -162,6 +162,7 @@ using namespace std;
 #define QUE
 #define LA
 #define EL
+#define EN 
 #define DE
 #define COMO_UN
 
