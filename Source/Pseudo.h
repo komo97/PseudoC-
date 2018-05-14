@@ -5,7 +5,7 @@
 #include <limits>
 using namespace std;
 
-//AllCaps
+#pragma region AllCaps
 
 //Crear el programa
 #define PROGRAMA int main() {
@@ -171,8 +171,9 @@ using namespace std;
 #define COMO_UN
 
 #define ADEMAS_DE ,
+#pragma endregion
 
-//NoCaps
+#pragma region NoCaps
 //crear el programa
 #define programa int main() {
 #define fin_del_programa return 0; }
@@ -337,8 +338,9 @@ using namespace std;
 #define como_un
 
 #define ademas_de ,
+#pragma endregion
 
-//Caps de titulo
+#pragma region Camel Caps
 //crear El Programa
 #define Programa int main() {
 #define Fin_del_programa return 0; }
@@ -503,3 +505,4 @@ using namespace std;
 #define Como_un
 
 #define Ademas_de ,
+#pragma endregion
