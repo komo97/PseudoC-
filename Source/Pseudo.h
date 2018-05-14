@@ -9,7 +9,7 @@ using namespace std;
 #define FORZAR_TERMINACION_DEL_PROGRAMA exit(-1);
 
 //Crear variables
-#define CREAR_ARREGLO(tipo, nombre) vector<tipo> nombre;
+#define CREAR_COLECCION(tipo, nombre) vector<tipo> nombre;
 #define CREAR_VARIABLE(tipo, nombre) tipo nombre;
 #define APUNTADOR_DE(tipoDeVariable) tipoDeVariable*
 #define REFERENCIA &
@@ -18,7 +18,7 @@ using namespace std;
 #define DESTRUIR_VARIABLE(variable) delete variable;
 
 //Tipos de variables
-#define ARREGLO(tipo) vector<tipo> 
+#define COLECCION(tipo) vector<tipo> 
 #define ENTERO int
 #define DECIMAL float
 #define BOOLEANO bool
@@ -26,8 +26,8 @@ using namespace std;
 #define ORACION string
 
 //Operaciones con arreglos
-#define ELEMENTO_DEL_ARREGLO(indice) [indice]
-#define AGREGAR_AL_ARREGLO(arreglo, variable) arreglo.push_back(variable);
+#define ELEMENTO_DE_LA_COLECCION(indice) [indice]
+#define AGREGAR_A_LA_COLECCION(arreglo, variable) arreglo.push_back(variable);
 
 //Comparaciones entre variables
 #define ES_IGUAL_A ==
@@ -99,7 +99,7 @@ using namespace std;
 //Entrada y salida de datos
 #define IMPRIMIR cout << 
 #define RECOGER_ENTRADA(dondeSeVaAGuardar) cin >> dondeSeVaAGuardar;
-#define IMPRIMIR_ARREGLO(arreglo) PARA CADA(i) EN(arreglo) HAZ IMPRIMIR i FIN_DE_LINEA FIN
+#define IMPRIMIR_COLECCION(arreglo) PARA CADA(i) EN(arreglo) HAZ IMPRIMIR i FIN_DE_LINEA FIN
 #define FIN_DE_LA_LINEA << endl;
 #define TERMINAR_LA_LINEA FIN_DE_LA_LINEA
 
